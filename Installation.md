@@ -9,3 +9,18 @@ Install xinput-calibrator? y/n N
 Install tslib (touchscreen library)? y/n N
 Reboot the system now? y/n Y
 Rebooting now...
+
+#Second part
+
+$ sudo raspi-config
+#Under Advanced Options:
+    #Overscan: disable.
+    #Device Tree: enable.
+    #SPI: enable and load kernel module by default.
+    #Audio: Auto
+    
+#Third Part
+sudo nano /boot/config.txt
+#Looking for and change Line to
+dtoverlay=tinylcd35,rotate=90,speed=80000000,fps=270
+sudo reboot
