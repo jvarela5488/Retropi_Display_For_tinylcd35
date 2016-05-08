@@ -1,3 +1,5 @@
+#Part One
+Part 
 $ wget -N https://github.com/watterott/RPi-Display/raw/master/rpi-display.sh
 $ sudo /bin/bash rpi-display.sh 270
 
