@@ -1,5 +1,7 @@
 #Part One
-Part 
+Part one is to retrive drivers to run the screen 
+
+
 $ wget -N https://github.com/watterott/RPi-Display/raw/master/rpi-display.sh
 $ sudo /bin/bash rpi-display.sh 270
 
@@ -13,6 +15,7 @@ Reboot the system now? y/n Y
 Rebooting now...
 
 #Second part
+Is meant to enable and disable options to make the drivers recognise the third part 
 
 $ sudo raspi-config
 #Under Advanced Options:
@@ -22,6 +25,7 @@ $ sudo raspi-config
     #Audio: Auto
     
 #Third Part
+
 sudo nano /boot/config.txt
 #Looking for and change Line to
 dtoverlay=tinylcd35,rotate=90,speed=80000000,fps=270
