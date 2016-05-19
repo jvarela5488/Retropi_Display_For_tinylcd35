@@ -28,5 +28,5 @@ $ sudo raspi-config
 
 sudo nano /boot/config.txt
 #Looking for and change Line to
-dtoverlay=tinylcd35,rotate=90,speed=80000000,fps=270
+dtoverlay=tinylcd35,rotate=270,speed=80000000,fps=270
 sudo reboot
